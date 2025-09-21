@@ -1,8 +1,11 @@
 Regresion_Lineal.ipynb
 
-Miembros
+Miembros:
+
 Maria elena quimbayo patiño 100816
+
 Diana carolina quiroga
+
 Juan david reina bogota 90230
 
 **Parte 1: Definición del Problema**
