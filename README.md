@@ -10,11 +10,24 @@ Lista entre 3 y 5 variables independientes
 Especifica si tu problema es de regresión (predecir un valor numérico) o de clasificación.
 Respuesta (escribe aquí):
 
-Respuesta 1:
+Respuesta 1: 
+Variable dependiente (Y): Nivel de productividad diaria de la planta (unidades producidas por día).
 
 Respuesta 2:
+Variables independientes (X):
+
+A. Horas de operación de la maquinaria.
+
+B. Cantidad de materia prima disponible al inicio de la jornada.
+
+C. Número de trabajadores asignados a la línea de producción.
+
+D. Tiempo promedio de inactividad por fallas o mantenimiento.
+
+E. Nivel de calidad del insumo (índice de defectos en materia prima).
 
 Respuesta 3:
+Es un problema de regresión, ya que se busca predecir un valor numérico (unidades producidas).
 
 
 **Parte 2: Preprocesamiento de Datos y *Leakage***
