@@ -60,9 +60,28 @@ Parte 3: Interpretación y Métricas de Regresión Simple
 Para esta sección, elige un caso simple de regresión (puede ser el tuyo o uno hipotético, como predecir la demanda de un producto según su precio).
 
 1. Define claramente las variables Y y X junto con sus unidades (ej. Y: número de unidades vendidas, X: precio en dólares).
+   RTA/Respuesta 1:
+Y (variable dependiente): Nivel de productividad diaria (unidades producidas por día).
+X (variable independiente): Horas de operación de la maquinaria (horas/día).
+   
 2. Supón que entrenas un modelo y obtienes una pendiente de . Escribe una interpretación clara y concisa de este coeficiente en el contexto de tu problema.
+   RTA/ Respuesta 2:
+Si el modelo arroja una pendiente de 𝛽^1=−0.6, significa que:
+
+Por cada hora adicional de operación de la maquinaria, la productividad disminuye en promedio 0.6 unidades.
+Esto podría interpretarse como un efecto de fatiga o desgaste en los procesos, donde más horas no necesariamente implican mayor producción, sino pérdidas por ineficiencia o errores.
+   
 3. ¿Qué métrica de evaluación usarías (MAE, RMSE, o MAPE) y por qué es la más adecuada para tu caso?
+   RTA/ Respuesta 3:
+Usaría la métrica RMSE (Root Mean Squared Error) porque penaliza más los errores grandes, lo cual es importante en este caso: un error significativo en la predicción de unidades producidas podría afectar seriamente la planeación de inventarios y entregas.
+   
 4. Menciona un supuesto del modelo de regresión lineal que validarías (ej. linealidad, homocedasticidad) y explica cómo lo harías (usando un gráfico o una prueba
+   RTA/Respuesta 4:
+Un supuesto que validaría es la linealidad entre horas de operación (X) y productividad (Y).
+
+Para comprobarlo, graficaría un diagrama de dispersión de productividad vs. horas de operación, con la recta de regresión superpuesta.
+
+Si se observa una tendencia curva o no lineal, sabría que la relación no es estrictamente lineal y el modelo simple no sería adecuado.
 
 Parte 4: Regresión Múltiple y Colinealidad
 
