@@ -34,9 +34,29 @@ Es un problema de regresión, ya que se busca predecir un valor numérico (unida
 Basado en el caso que definiste en la Parte 1:
 
 1. Lista entre 3 y 5 transformaciones que aplicarías a tus datos (ej. imputación de valores faltantes, codificación de variables categóricas, escalado, creación de lags, etc.) y justifica por qué cada una es necesaria.
+
+RTA/ Respuesta 1 (Transformaciones):
+
+Imputación de valores faltantes: si hay días sin registro de horas de operación o personal, se aplicará imputación (media o mediana) para no perder datos importantes.
+
+Escalado de variables numéricas: variables como horas de operación o cantidad de materia prima tienen escalas diferentes; normalizarlas permitirá que el modelo no dé más peso a las de mayor rango.
+
+Codificación de variables categóricas: si existiera información categórica como "turno de trabajo" (mañana, tarde, noche), se codificaría en variables dummy para que el modelo pueda interpretarlas.
+
+Creación de lags (rezagos): generar variables que reflejen productividad del día anterior o fallas previas de maquinaria, porque la productividad actual puede depender de tendencias recientes.
+
+Justificación: cada transformación asegura calidad de datos, comparabilidad entre variables y captura de relaciones temporales relevantes para la predicción.
   
 2. Señala un posible riesgo de data leakage (fuga de datos) en tu plan y explica cómo lo evitarías usando un pipeline de preprocesamiento.
-Respuesta (escribe aquí):
+   
+RTA/ Respuesta 2 (Riesgo de data leakage):
+Un posible riesgo de data leakage sería usar información del futuro, por ejemplo: incluir la productividad total de la semana para predecir un solo día. Esto daría ventaja artificial al modelo porque estaría “espiando” datos que en la vida real no tendría disponibles.
+
+Cómo evitarlo con un pipeline:
+
+Definir claramente las variables solo con información disponible hasta el momento de la predicción.
+
+Aplicar imputación, escalado y creación de lags dentro del pipeline, asegurando que estas transformaciones se calculen únicamente sobre los datos de entrenamiento y luego se apliquen al test, evitando filtrar datos futuros.
 
 Parte 3: Interpretación y Métricas de Regresión Simple
 
