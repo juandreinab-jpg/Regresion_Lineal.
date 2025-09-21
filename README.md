@@ -4,7 +4,7 @@ Miembros:
 
 Maria elena quimbayo patiño 100816
 
-Diana carolina quiroga
+Diana carolina quiroga 99396
 
 Juan david reina bogota 90230
 
