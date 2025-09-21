@@ -182,7 +182,8 @@ Se utiliza para evaluar el desempeño de un modelo más allá de un único punto
    RTA/El accuracy (exactitud) es la proporción de predicciones correctas (positivas y negativas) sobre el total de casos.
 
 Accuracy=TP+TN+FP+FN/TP+TN
-	​
+
+ ​
 Puede ser una métrica engañosa en problemas con clases desbalanceadas. Por ejemplo: si en un hospital solo el 1% de pacientes tiene una enfermedad, un modelo que siempre predice “no enfermo” tendrá 99% de accuracy, pero no sirve para identificar a los enfermos.
    
 3. Describe qué es una matriz de confusión y cómo se interpretan sus componentes (Verdaderos Positivos, Falsos Positivos, Verdaderos Negativos, Falsos Negativos).
