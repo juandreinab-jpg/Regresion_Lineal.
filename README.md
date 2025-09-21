@@ -1,4 +1,4 @@
-# Regresion_Lineal.
+Regresion_Lineal.ipynb
 
 **Parte 1: Definición del Problema**
 Piensa en tu experiencia académica o laboral en un área de operaciones y elige un problema relacionado con inventarios, calidad, mantenimiento o productividad.
